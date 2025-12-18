@@ -1,0 +1,54 @@
+{
+  "bot": {
+    "enable": true
+  },
+  "scopes": {
+    "user": [
+      "im:message",
+      "im:message:readonly",
+      "base:table:read",
+      "bitable:app",
+      "bitable:app:readonly",
+      "docs:doc",
+      "docs:document.media:upload",
+      "drive:drive",
+      "sheets:spreadsheet",
+      "base:record:create",
+      "wiki:node:read",
+      "wiki:wiki",
+      "wiki:wiki:readonly",
+      "base:record:retrieve",
+      "base:field:read",
+      "contact:user.employee_id:readonly"
+    ],
+    "tenant": [
+      "im:message.p2p_msg:readonly",
+      "im:message.group_at_msg:readonly",
+      "im:message.group_msg",
+      "im:message",
+      "im:message:readonly",
+      "base:table:read",
+      "bitable:app",
+      "bitable:app:readonly",
+      "docs:doc",
+      "docs:document.media:upload",
+      "drive:drive",
+      "sheets:spreadsheet",
+      "base:record:create",
+      "wiki:node:read",
+      "wiki:wiki",
+      "wiki:wiki:readonly",
+      "base:record:retrieve",
+      "base:field:read",
+      "contact:user.employee_id:readonly"
+    ]
+  },
+  "events": {
+    "items": {
+      "user": [],
+      "tenant": [
+        "im.message.receive_v1"
+      ]
+    }
+  }
+}
